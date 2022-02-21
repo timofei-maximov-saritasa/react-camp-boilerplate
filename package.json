@@ -43,7 +43,7 @@
     "stylelint-config-recommended-scss": "^5.0.2"
   },
   "lint-staged": {
-    "src/**/*.{ts,html}": "eslint --cache --fix",
-    "src/**/*.*css": "stylelint --fix"
+    "src/**/*.{ts,tsx}": "eslint --cache --fix",
+    "src/**/*.css": "stylelint --fix"
   }
 }
