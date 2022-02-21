@@ -14,7 +14,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "lint:fix": "npm run lint -- --fix"
@@ -33,7 +32,6 @@
   },
   "devDependencies": {
     "@chernodub/eslint-config": "^2.0.1",
-    "@types/jest": "^26.0.24",
     "@types/node": "^17.0.5",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
