@@ -2,7 +2,7 @@
 
 ## Folder structure
 
-```ts
+```
 src
 ├── api
 │   ├── dtos
@@ -21,7 +21,7 @@ src
 
 ## Component file structure
 
-```ts
+```
 CustomButton
 ├── CustomButton.tsx
 ├── CustomButton.module.css
