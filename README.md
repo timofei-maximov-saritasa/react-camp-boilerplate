@@ -49,5 +49,5 @@ npm run lint
 ## Lint with fix
 
 ```bash
-npm run lint
+npm run lint:fix
 ```
