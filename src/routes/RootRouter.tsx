@@ -1,12 +1,12 @@
 import { Navigate, RouteObject, useRoutes } from 'react-router-dom';
-import { testRoutes } from 'src/features/test/routes';
+import { postsRoutes } from 'src/features/posts/routes';
 
 const routes: RouteObject[] = [
   {
     path: '*',
-    element: <Navigate to="/test" />,
+    element: <Navigate to="/posts" />,
   },
-  ...testRoutes,
+  ...postsRoutes,
 ];
 
 export const RootRouter: React.VFC = () => useRoutes(routes);
