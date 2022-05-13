@@ -1,9 +1,10 @@
-import { Post } from 'src/models/post';
+import { Post } from '../../models/post';
 
 /**
  * Posts state.
  */
 export interface PostsState {
+
   /** Posts list. */
   readonly posts: Post[];
 

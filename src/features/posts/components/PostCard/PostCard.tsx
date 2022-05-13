@@ -1,12 +1,15 @@
-import { memo, VFC } from 'react';
-import { Post } from 'src/models/post';
+import { memo, FC } from 'react';
+
+import { Post } from '../../../../models/post';
 
 interface Props {
+
   /** Post. */
   readonly post: Post;
 }
 
-const PostCardComponent: VFC<Props> = ({ post }) => (
+/** Card with post data. */
+const PostCardComponent: FC<Props> = ({ post }) => (
   <div>
     <h2>{post.title}</h2>
     <span>{post.body}</span>
