@@ -1,10 +1,12 @@
-import { memo, useEffect, VFC } from 'react';
-import { useAppDispatch, useAppSelector } from 'src/store';
-import { fetchPosts } from 'src/store/post/dispatchers';
-import { selectIsPostsLoading, selectPosts } from 'src/store/post/selectors';
+import { memo, useEffect, FC } from 'react';
+
+import { useAppDispatch, useAppSelector } from '../../../../store';
+import { fetchPosts } from '../../../../store/post/dispatchers';
+import { selectPosts, selectIsPostsLoading } from '../../../../store/post/selectors';
 import { PostCard } from '../../components/PostCard';
 
-const PostsPageComponent: VFC = () => {
+/** Post page component. */
+const PostsPageComponent: FC = () => {
   const dispatch = useAppDispatch();
   const posts = useAppSelector(selectPosts);
   const isLoading = useAppSelector(selectIsPostsLoading);
@@ -16,6 +18,7 @@ const PostsPageComponent: VFC = () => {
   if (isLoading && posts.length === 0) {
     return <div>Loading</div>;
   }
+
   return (
     <>
       <h1>Posts</h1>

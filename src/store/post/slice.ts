@@ -7,6 +7,7 @@ export const postsSlice = createSlice({
   name: 'posts',
   initialState,
   reducers: {},
+  // eslint-disable-next-line jsdoc/require-jsdoc
   extraReducers: builder => builder
     .addCase(fetchPosts.pending, state => {
       state.loading = true;

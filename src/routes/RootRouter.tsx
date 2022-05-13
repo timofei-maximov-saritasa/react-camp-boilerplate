@@ -1,5 +1,6 @@
+import { FC } from 'react';
 import { Navigate, RouteObject, useRoutes } from 'react-router-dom';
-import { postsRoutes } from 'src/features/posts/routes';
+import { postsRoutes } from '../features/posts/routes';
 
 const routes: RouteObject[] = [
   {
@@ -9,4 +10,5 @@ const routes: RouteObject[] = [
   ...postsRoutes,
 ];
 
-export const RootRouter: React.VFC = () => useRoutes(routes);
+/** Root router component. */
+export const RootRouter: FC = () => useRoutes(routes);
