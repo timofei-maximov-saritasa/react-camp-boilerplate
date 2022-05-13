@@ -37,7 +37,7 @@ npm run install
 ## Development mode
 
 ```bash
-npm run start
+npm run dev
 ```
 
 ## Lint
