@@ -15,7 +15,7 @@ const PostsPageComponent: FC = () => {
     dispatch(fetchPosts());
   }, [dispatch]);
 
-  if (isLoading && posts.length === 0) {
+  if (isLoading) {
     return <div>Loading</div>;
   }
 

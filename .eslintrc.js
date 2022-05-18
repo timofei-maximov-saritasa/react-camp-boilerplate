@@ -451,7 +451,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*Dto.ts'],
+      files: ['*Dto.ts', 'vite-env.d.ts', '.eslintrc.js'],
       rules: {
         '@typescript-eslint/naming-convention': 'off',
         'jsdoc/require-jsdoc': 'off',

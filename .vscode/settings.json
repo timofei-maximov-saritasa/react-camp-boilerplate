@@ -1,3 +1,6 @@
 {
-  "typescript.suggest.jsdoc.generateReturns": false
+  "typescript.suggest.jsdoc.generateReturns": false,
+  "cSpell.words": [
+    "Immerable"
+  ]
 }
