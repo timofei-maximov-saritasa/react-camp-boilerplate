@@ -12,10 +12,10 @@ export interface PostsState {
   readonly error?: string;
 
   /** Loading. */
-  readonly loading: boolean;
+  readonly isLoading: boolean;
 }
 
 export const initialState: PostsState = {
-  loading: false,
+  isLoading: false,
   posts: [],
 };

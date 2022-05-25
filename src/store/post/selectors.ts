@@ -10,6 +10,6 @@ export const selectPosts = createSelector(
 
 /** Selects posts loading state. */
 export const selectIsPostsLoading = createSelector(
-  (state: RootState) => state.posts.loading,
-  loading => loading,
+  (state: RootState) => state.posts.isLoading,
+  isLoading => isLoading,
 );
